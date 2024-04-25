@@ -1,0 +1,36 @@
+http://localhost:1337/?name=hello
+http://localhost:1337/CreateCourse
+{
+  "name":"hello"
+}
+http://localhost:1337/DeleteCourse
+{
+  "name":"World"
+}
+http://localhost:1337/CreateFolder
+{
+  "course":"hello",
+  "name":"main"
+}
+{
+  "course":"hello",
+  "folder":["main"],
+  "name":"lesson1"
+}
+http://localhost:1337/DeleteFolder
+{
+  "course":"hello",
+  "folder":["main"],
+  "name":"lesson1"
+}
+http://localhost:1337/AddFiles
+{
+  "course":"hello",
+  "folder":["main"]
+}
+http://localhost:1337/DeleteFiles
+{
+  "course":"hello",
+  "folder":["main"],
+  "names":["Project.pdf"]
+}

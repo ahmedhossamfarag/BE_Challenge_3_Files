@@ -1,0 +1,60 @@
+
+
+
+--  Insert Course
+
+INSERT INTO `Course`(`id`) 
+VALUES ('$id')
+;
+
+
+
+--  Insert Folder
+
+INSERT INTO `Folder`(`id`, `name`, `color`, `Course_id`, `Folder_id`) 
+VALUES ('$id', '$name', '$color', '$course_id', '$folder_id')
+;
+
+
+
+--  Insert File
+
+INSERT INTO `File`(`id`, `title`, `content`, `Folder_id`, `Course_id`) 
+VALUES ('$id', '$title', '$content', '$folder_id', '$course_id')
+;
+
+
+
+--  Delete Folder
+
+DELETE FROM `Folder` 
+WHERE id = $id
+;
+
+
+
+--  Delete File
+
+DELETE FROM `File` 
+WHERE id = $id
+;
+
+
+
+--  Select Folder : id,name,color,Course_id,Folder_id
+
+SELECT `id`, `name`, `color`, `Course_id`, `Folder_id` 
+ FROM `Folder`
+;
+
+
+
+--  Select File : id,title,content,Folder_id,Course_id
+
+SELECT `id`, `title`, `content`, `Folder_id`, `Course_id` 
+ FROM `File`
+;
+
+
+
+
